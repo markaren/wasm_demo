@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WASM</title>
+</head>
+<body>
+
+<script src="wasm_demo.js"></script>
+
+<script>
+
+    Module.onRuntimeInitialized = function () {
+        console.log('lerp result: ' + Module.lerp(1, 2, 0.5))
+
+        let instance = new Module.MyClass(10, "heisann")
+        instance.incrementX();
+        console.log("x=" + instance.x)
+
+        instance.x = 20;
+        console.log("x=" + instance.x)
+
+        let str = instance.getString();
+        console.log(str)
+
+        instance.greet("Per");
+        instance.delete()
+
+    }
+
+</script>
+
+</body>
+</html>
