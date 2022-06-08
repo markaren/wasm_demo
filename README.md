@@ -1,6 +1,6 @@
-# WASM demo
+# C++ WASM demo
 
-A simple WASM demo.
+A simple WASM demo using Emscripten.
 
 ### Setup
 
@@ -18,7 +18,5 @@ cd emsdk
 ./emsdk activate latest --permanent
 
 ```
-
-Add `<path-to-emscripten>/emsdk/upstream/emscripten` to PATH.
 
 Configure and build using CMake as normal.

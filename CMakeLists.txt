@@ -1,4 +1,4 @@
-set(CMAKE_TOOLCHAIN_FILE "$ENV{EMSCRIPTEN}/cmake/Modules/Platform/Emscripten.cmake" CACHE STRING "")
+set(CMAKE_TOOLCHAIN_FILE "$ENV{EMSDK}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake" CACHE STRING "")
 
 cmake_minimum_required(VERSION 3.15)
 project(wasm_demo)
